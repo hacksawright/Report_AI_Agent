@@ -2,6 +2,7 @@ from src.graph.schema import State
 from src.models import llm
 
 def therapist_agent(state: State):
+    print("therapist agent")
     last_message = state["messages"][-1]
 
     messages = [

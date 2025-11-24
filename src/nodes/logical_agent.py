@@ -2,6 +2,7 @@ from src.graph.schema import State
 from src.models import llm
 
 def logical_agent(state: State):
+    print("logical agent")
     last_message = state["messages"][-1]
 
     messages = [
