@@ -5,9 +5,9 @@ from typing_extensions import TypedDict
 
 
 class MessageClassifier(BaseModel):
-    message_type: Literal["emotional", "logical", "football"] = Field(
+    message_type: Literal["emotional", "logical", "football", "general"] = Field(
         ...,
-        description="Classify if the message requires an emotional (therapist), logical, or football response."
+        description="Classify if the message requires an emotional (therapist), logical, football or general response."
     )
 
 
